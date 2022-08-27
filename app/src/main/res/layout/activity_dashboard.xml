@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_below="@id/lay"
+        android:id="@+id/fragment_container"
+        android:layout_above="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:background="@color/tranparent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:backgroundTint="@color/dark"
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fabCradleMargin="10dp"
+            app:fabCradleVerticalOffset="10dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            android:layout_gravity="bottom">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                app:itemTextColor="@color/bottom_nav_color"
+                app:itemIconTint="@color/bottom_nav_color"
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:menu="@menu/bottom_menu" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            app:backgroundTint="@color/dark"
+            android:id="@+id/fab"
+            android:layout_marginBottom="30dp"
+            app:elevation="0dp"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            app:rippleColor="@color/dark"
+            app:srcCompat="@drawable/ic_scan"
+            app:layout_anchor="@id/bottomAppBar"
+            android:contentDescription="TODO" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

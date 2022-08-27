@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/dark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoConnection">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="No Internet Connection"
+    android:textAlignment="center"
+    android:fontFamily="@font/arialbd"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:layout_marginTop="30dp"
+    android:textStyle="bold"
+
+    />
+    <ImageView
+        android:id="@+id/imgNoConection"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_no_connection"
+        />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/imgNoConection"
+        android:textColor="@color/red_font"
+        android:fontFamily="@font/arialbd"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cobaLagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/arial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Your Internet Connection"
+        />
+</RelativeLayout>

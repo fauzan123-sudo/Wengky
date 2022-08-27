@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/dark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ui.fragment.Gaji">
+
+    <ScrollView
+        android:background="@drawable/background_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/fragment_overlay"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imgSalary"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/intro_gaji"/>
+            <TextView
+                android:id="@+id/txtDetail"
+                android:layout_below="@id/imgSalary"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/acme"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail"
+                android:textColor="@color/dark"
+                />
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_below="@id/txtDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TableLayout
+                    android:layout_marginTop="10dp"
+                    android:stretchColumns="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="Gaji Pokok"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"
+                            />
+                        <TextView
+                            android:id="@+id/gajiPokok"
+                            android:layout_marginEnd="30dp"
+                            android:textSize="10sp"
+                            android:gravity="right"
+                            android:text="Rp. 0"
+                            android:fontFamily="@font/arial"
+                            android:textColor="@color/text_solid"
+                            android:layout_marginStart="30dp"
+                            />
+                    </TableRow>
+                </TableLayout>
+                <View
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view"
+                    />
+
+                <TableLayout
+                    android:layout_marginTop="10dp"
+                    android:stretchColumns="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="Potongan"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"
+                            />
+                        <TextView
+
+                            android:layout_marginEnd="30dp"
+                            android:textSize="10sp"
+                            android:gravity="right"
+                            android:fontFamily="@font/arial"
+                            android:textColor="@color/text_solid"
+                            android:layout_marginStart="30dp"
+                            />
+                    </TableRow>
+                </TableLayout>
+                <View
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view"
+                    />
+
+                <TableLayout
+                    android:layout_marginTop="10dp"
+                    android:stretchColumns="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="Asuransi"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"
+                            />
+                        <TextView
+                            android:id="@+id/asuransi"
+                            android:layout_marginEnd="30dp"
+                            android:textSize="10sp"
+                            android:gravity="right"
+                            android:text="Rp. 0"
+                            android:fontFamily="@font/arial"
+                            android:textColor="@color/text_solid"
+                            android:layout_marginStart="30dp"
+                            />
+                    </TableRow>
+                </TableLayout>
+                <View
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view"
+                    />
+
+                <TableLayout
+                    android:layout_marginTop="10dp"
+                    android:stretchColumns="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="PPH21"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"
+                            />
+                        <TextView
+                            android:id="@+id/pph21"
+                            android:layout_marginEnd="30dp"
+                            android:textSize="10sp"
+                            android:gravity="right"
+                            android:text="Rp. 0"
+                            android:fontFamily="@font/arial"
+                            android:textColor="@color/text_solid"
+                            android:layout_marginStart="30dp"
+                            />
+                    </TableRow>
+                </TableLayout>
+
+                <View
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view"
+                    />
+
+                <TableLayout
+                    android:layout_marginTop="10dp"
+                    android:stretchColumns="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="Total Potongan"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"
+                            />
+                        <TextView
+                            android:id="@+id/totalPotongan"
+                            android:layout_marginEnd="30dp"
+                            android:textSize="10sp"
+                            android:gravity="right"
+                            android:text="Rp. 0"
+                            android:fontFamily="@font/arial"
+                            android:textColor="@color/text_solid"
+                            android:layout_marginStart="30dp"
+                            />
+                    </TableRow>
+                </TableLayout>
+
+                <View
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view"
+                    />
+                <TableLayout
+                    android:layout_marginTop="10dp"
+                    android:stretchColumns="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="Gaji Bersih"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"
+                            />
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/gaji_bersih"
+                            android:layout_marginEnd="30dp"
+                            android:textSize="10sp"
+                            android:gravity="right"
+                            android:text=" Rp. 0"
+                            android:fontFamily="@font/arial"
+                            android:textColor="@color/text_solid"
+                            android:layout_marginStart="30dp"
+                            />
+                    </TableRow>
+                </TableLayout>
+                <View
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

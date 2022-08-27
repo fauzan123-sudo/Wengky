@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_refresh_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.Home"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="#263238"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@drawable/background_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/pengumuman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengumuman"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#263238"
+                android:textSize="12sp"
+                android:fontFamily="@font/acme"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:elevation="0dp"
+                android:id="@+id/cv_slider_mainActivity"
+                android:layout_below="@id/pengumuman"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="30dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:sliderAnimationDuration="1500"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="1500"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="5"
+                    app:sliderStartAutoCycle="true" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtStatistik"
+                android:layout_below="@id/cv_slider_mainActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Statistik Ketepatan"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#263238"
+                android:textSize="12sp"
+                android:fontFamily="@font/acme"
+                />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart1"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtStatistik" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

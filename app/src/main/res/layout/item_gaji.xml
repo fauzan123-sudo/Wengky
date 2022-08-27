@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/keyGaji"
+                android:textSize="10sp"
+                android:text="Asuransi"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"
+                />
+            <TextView
+                android:id="@+id/valueGaji"
+                android:layout_marginEnd="30dp"
+                android:textSize="10sp"
+                android:gravity="right"
+                android:text="Rp. 0"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/text_solid"
+                android:layout_marginStart="30dp"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
